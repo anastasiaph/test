@@ -1,0 +1,56 @@
+#include "boid.h"
+#include <iostream>
+#include <vector>
+
+
+Boid::Boid(ngl::Vec3 _bpos, ngl::Vec3  _bdirection)
+{
+
+//    //int i=0;
+   ngl::Vec3 m_bpos=_bpos;
+   ngl::Vec3 m_bdirection=_bdirection;
+//    //ngl::Vec3( -500.0 + random(1000), -500.0 + random(1000), -500.0 + random(1000));
+
+    std::cout<<'hi\n';
+
+}
+
+
+const std::unique_ptr <ngl::Obj> &Boid::getBoid()
+{
+    return (m_mesh_boid);
+}
+
+
+Boid::~Boid()
+{
+
+}
+
+void Boid::setPos(const ngl::Vec3 &_vec)
+{
+    ngl::Random *rng=ngl::Random::instance();
+
+    ngl::Vec3 _pos;
+//    m_pos=rng->getRandomVec3();
+//    std::cout<<"hi"<<m_pos<<std::endl;
+
+//    for(auto &m_mesh_boid : _boidsinflock)
+//    {
+
+//        m_pos=rng->getRandomVec3();
+//        std::cout<<"hi"<<m_pos<<std::endl;
+
+
+//    }
+}
+
+void Boid::update()
+{
+ std::cout<<"hi"<<std::endl;
+}
+
+void Boid::draw()
+{
+ std::cout<<"bye"<<std::endl;
+}
